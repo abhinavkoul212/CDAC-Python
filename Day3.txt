@@ -1,0 +1,696 @@
+Python 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> str1="Hello world Hello"
+>>> list1=list(str1.split(" "))
+>>> list1
+['Hello', 'world', 'Hello']
+>>> set1=set(list1)
+>>> set1
+{'world', 'Hello'}
+>>> set1
+{'world', 'Hello'}
+>>> set1
+{'world', 'Hello'}
+>>> set1
+{'world', 'Hello'}
+>>> set1 = set(list1)
+>>> set1
+{'world', 'Hello'}
+>>> set1 = set(list1)
+>>> set1
+{'world', 'Hello'}
+>>> set1 = set(list1)
+>>> set1
+{'world', 'Hello'}
+>>> set1 = set(list1)
+>>> set1
+{'world', 'Hello'}
+>>> list1
+['Hello', 'world', 'Hello']
+>>> for i in range(0:len(list1):):
+	
+SyntaxError: invalid syntax
+>>> list2 = []
+for i in range(0,len(list1),):
+
+	
+SyntaxError: multiple statements found while compiling a single statement
+>>> for i not in list1:
+	
+SyntaxError: invalid syntax
+>>> for i not in list1:
+	
+SyntaxError: invalid syntax
+>>> Str2 = "The quick brown fox jumps over lazy dog"
+>>> str2
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    str2
+NameError: name 'str2' is not defined
+>>> Str2
+'The quick brown fox jumps over lazy dog'
+>>> for i in Str2():
+	if(i != ' '):
+		list2.add(i)
+else:
+	print(list2)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#38>", line 1, in <module>
+    for i in Str2():
+TypeError: 'str' object is not callable
+>>> for i in Str2():
+	print(i)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#40>", line 1, in <module>
+    for i in Str2():
+TypeError: 'str' object is not callable
+>>> for i in Str2:
+	print(i)
+
+	
+T
+h
+e
+ 
+q
+u
+i
+c
+k
+ 
+b
+r
+o
+w
+n
+ 
+f
+o
+x
+ 
+j
+u
+m
+p
+s
+ 
+o
+v
+e
+r
+ 
+l
+a
+z
+y
+ 
+d
+o
+g
+>>> for i in Str2:
+	if(i != ' '):
+		list2.add(i)
+else:
+	print(list2)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#44>", line 3, in <module>
+    list2.add(i)
+NameError: name 'list2' is not defined
+>>> list2
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    list2
+NameError: name 'list2' is not defined
+>>> list2 = []
+>>> list2
+[]
+>>> for i in Str2:
+	if(i != ' '):
+		list2.add(i)
+else:
+	print(list2)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#49>", line 3, in <module>
+    list2.add(i)
+AttributeError: 'list' object has no attribute 'add'
+>>> for i in Str2:
+	if(i != ' '):
+		list2.append(i)
+else:
+	print(list2)
+
+	
+['T', 'h', 'e', 'q', 'u', 'i', 'c', 'k', 'b', 'r', 'o', 'w', 'n', 'f', 'o', 'x', 'j', 'u', 'm', 'p', 's', 'o', 'v', 'e', 'r', 'l', 'a', 'z', 'y', 'd', 'o', 'g']
+>>> for i in range(65,91,):
+	found = False
+	for j in range(0,len(list2),):
+		if(i == list2[j]):
+			found = True
+	if(!found):
+		
+SyntaxError: invalid syntax
+>>> for i in range(65,91,):
+	found = False
+	for j in range(0,len(list2),):
+		if(i == list2[j]):
+			found = True
+			break
+	if(found==False):
+	print("List is not Pangram")
+	
+SyntaxError: expected an indented block
+>>> for i in range(65,91,):
+	found = False
+	for j in range(0,len(list2),):
+		if(i == list2[j]):
+			found = True
+			break
+	if(found==False):
+		print("List is not Pangram")
+		return
+	
+SyntaxError: 'return' outside function
+>>> for i in range(65,91,):
+	found = False
+	for j in range(0,len(list2),):
+		if(i == list2[j]):
+			found = True
+			break
+	if(found==False):
+		print("List is not Pangram")
+		break
+
+	
+List is not Pangram
+>>> list1.lower()
+Traceback (most recent call last):
+  File "<pyshell#63>", line 1, in <module>
+    list1.lower()
+AttributeError: 'list' object has no attribute 'lower'
+>>> Str2.lower()
+'the quick brown fox jumps over lazy dog'
+>>> list2 = []
+>>> for i in Str2:
+	if(i != ' '):
+		list2.add(i)
+else:
+	print(list2)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#67>", line 3, in <module>
+    list2.add(i)
+AttributeError: 'list' object has no attribute 'add'
+>>> for i in Str2:
+	if(i != ' '):
+		list2.append(i)
+else:
+	print(list2)
+
+	
+['T', 'h', 'e', 'q', 'u', 'i', 'c', 'k', 'b', 'r', 'o', 'w', 'n', 'f', 'o', 'x', 'j', 'u', 'm', 'p', 's', 'o', 'v', 'e', 'r', 'l', 'a', 'z', 'y', 'd', 'o', 'g']
+>>> Str3 = Str2.lower()
+>>> str3
+Traceback (most recent call last):
+  File "<pyshell#71>", line 1, in <module>
+    str3
+NameError: name 'str3' is not defined
+>>> Str3
+'the quick brown fox jumps over lazy dog'
+>>> Str3
+'the quick brown fox jumps over lazy dog'
+>>> count = 0
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j != ' ' && j== i):
+			
+SyntaxError: invalid syntax
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j != ' ' and j== i):
+			found = True
+	if(found == False):
+		print("Not Pangram")
+else:
+	print("Pangram")
+
+	
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Not Pangram
+Pangram
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j != ' ' and j== i):
+			found = True
+	if(found == False):
+		print("Not Pangram")
+		break
+else:
+	print("Pangram")
+
+	
+Not Pangram
+>>> Str3
+'the quick brown fox jumps over lazy dog'
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j != ' ' and j== i):
+			found = True
+			break
+	if(found == False):
+		print("Not Pangram")
+		break
+else:
+	print("Pangram")
+
+	
+Not Pangram
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j== i):
+			found = True
+			break
+	if(found == False):
+		print("Not Pangram")
+		break
+else:
+	print("Pangram")
+
+	
+Not Pangram
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j== i || j ==' '):
+			found = True
+			break
+	if(found == False):
+		print("Not Pangram")
+		break
+else:
+	print("Pangram")
+	
+SyntaxError: invalid syntax
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j== i or j ==' '):
+			found = True
+			break
+	if(found == False):
+		print("Not Pangram")
+		break
+else:
+	print("Pangram")
+
+	
+Pangram
+>>> Str3 = "vikas"
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j== i or j ==' '):
+			found = True
+			break
+	if(found == False):
+		print("Not Pangram")
+		break
+else:
+	print("Pangram")
+
+	
+Not Pangram
+>>> Str3 = "abcdefghijklmnopqrstuvwxyzgfhfthf"
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j== i or j ==' '):
+			found = True
+			break
+	if(found == False):
+		print("Not Pangram")
+		break
+else:
+	print("Pangram")
+
+	
+Not Pangram
+>>> Str3
+'abcdefghijklmnopqrstuvwxyzgfhfthf'
+>>> for i in range(65,91,):
+	found = False;
+	for j in Str3:
+		if(j== i):
+			found = True
+			break
+	if(found == False):
+		print("Not Pangram")
+		break
+else:
+	print("Pangram")
+
+	
+Not Pangram
+>>> x=
+SyntaxError: invalid syntax
+>>> 
+>>> x="the_new_class"
+>>> y=x.split("_")
+>>> y
+['the', 'new', 'class']
+>>> for item in y:
+	item.capitalize();
+
+	
+'The'
+'New'
+'Class'
+>>> for item in y:
+	" ".join(item.capitalize())
+
+	
+'T h e'
+'N e w'
+'C l a s s'
+>>> for item in y:
+	item.capitalize()
+" ".join()
+SyntaxError: invalid syntax
+>>> list2 = []
+>>> for item in y:
+	list2.append(item.capitalize())
+" ".join(list2)
+SyntaxError: invalid syntax
+>>> for item in y:
+	list2.append(item.capitalize())
+"".join(list2)
+SyntaxError: invalid syntax
+>>> for item in y:
+	list2.append(item.capitalize())
+
+	
+>>> list2
+['The', 'New', 'Class']
+>>> print("".join(list2))
+TheNewClass
+>>> x
+'the_new_class'
+>>> for i in range(0,len(x),):
+	if(i==0 or x[i]=='_'):
+		x[i].upper()
+else:
+	print(x)
+
+	
+'T'
+'_'
+'_'
+the_new_class
+>>> for i in range(0,len(x),):
+	if(i==0 or x[i]=='_'):
+		x[i+1].upper()
+else:
+	print(x)
+
+	
+'H'
+'N'
+'C'
+the_new_class
+>>> for i in range(0,len(x),):
+	x[0].upper()
+	if(x[i]=='_'):
+		x[i+1].upper()
+else:
+	print(x)
+
+	
+'T'
+'T'
+'T'
+'T'
+'N'
+'T'
+'T'
+'T'
+'T'
+'C'
+'T'
+'T'
+'T'
+'T'
+'T'
+the_new_class
+>>> x[0].upper()
+for i in range(0,len(x),):
+	if(x[i]=='_'):
+		x[i+1].upper()
+else:
+	print(x)
+	
+SyntaxError: multiple statements found while compiling a single statement
+>>> for i in range(0,len(x),):
+	if(x[i]=='_'):
+		x[i+1].upper()
+else:
+	x[0].upper()
+	print(x)
+
+	
+'N'
+'C'
+'T'
+the_new_class
+>>> z = ""
+>>> for i in range(0,len(x),):
+	z = z+x[i]
+	if(i>0 && x[i-1]=='_'):
+		z= z+ x[i].upper()
+else:
+	print(z)
+	
+SyntaxError: invalid syntax
+>>> for i in range(0,len(x),):
+	z = z+x[i]
+	if(i>0 and x[i-1]=='_'):
+		z= z+ x[i].upper()
+else:
+	print(z)
+
+	
+the_nNew_cClass
+>>> for i in range(0,len(x),):
+	if(i>0 and x[i-1]=='_'):
+		z= z+ x[i].upper()
+	else:
+		z = z+x[i]
+else:
+	print(z)
+
+	
+the_nNew_cClassthe_New_Class
+>>> Str3
+'abcdefghijklmnopqrstuvwxyzgfhfthf'
+>>> z
+'the_nNew_cClassthe_New_Class'
+>>> z =""
+>>> for i in range(0,len(x),):
+	if(i>0 and x[i-1]=='_'):
+		z= z+ x[i].upper()
+	else:
+		z = z+x[i]
+else:
+	print(z)
+
+	
+the_New_Class
+>>> for i in range(0,len(x),):
+	if(i==0):
+		z= z+ x[i].upper()
+	elif(i>0 and x[i-1]=='_'):
+		z= z+ x[i].upper()
+	else:
+		z = z+x[i]
+else:
+	print(z)
+
+	
+the_New_ClassThe_New_Class
+>>> z=""
+>>> for i in range(0,len(x),):
+	if(i==0):
+		z= z+ x[i].upper()
+	elif(i>0 and x[i-1]=='_'):
+		z= z+ x[i].upper()
+	else:
+		z = z+x[i]
+else:
+	print(z)
+
+	
+The_New_Class
+>>> z
+'The_New_Class'
+>>> str q =''
+SyntaxError: invalid syntax
+>>> q =''
+>>> q
+''
+>>> for i in range(0,len(z),):
+	if(i==0):
+		q= q+ x[i].lower()
+	elif(i<len(z) && (x[i]>=97 or x[i]<=122)):
+		q= q+'_'
+		q= q+ x[i].lower()
+	else:
+		q = q+x[i]
+else:
+	print(q)
+	
+SyntaxError: invalid syntax
+>>> for i in range(0,len(z),):
+	if(i==0):
+		q= q+ x[i].lower()
+	elif(i<len(z) and (x[i]>=97 or x[i]<=122)):
+		q= q+'_'
+		q= q+ x[i].lower()
+	else:
+		q = q+x[i]
+else:
+	print(q)
+
+	
+Traceback (most recent call last):
+  File "<pyshell#159>", line 4, in <module>
+    elif(i<len(z) and (x[i]>=97 or x[i]<=122)):
+TypeError: '>=' not supported between instances of 'str' and 'int'
+>>> for i in range(0,len(z),):
+	if(i==0):
+		q= q+ x[i].lower()
+	elif(i<len(z) and (x[i]>='A' or x[i]<='Z')):
+		q= q+'_'
+		q= q+ x[i].lower()
+	else:
+		q = q+x[i]
+else:
+	print(q)
+
+	
+tt_h_e___n_e_w___c_l_a_s_s
+>>> Q
+Traceback (most recent call last):
+  File "<pyshell#162>", line 1, in <module>
+    Q
+NameError: name 'Q' is not defined
+>>> q
+'tt_h_e___n_e_w___c_l_a_s_s'
+>>> q=""
+>>> z
+'The_New_Class'
+>>> q
+''
+>>> for i in range(0,len(z),1):
+	if(i==0):
+		q= q+ x[i].lower()
+	elif(i<len(z) and (x[i]>='A' or x[i]<='Z')):
+		q= q+'_'
+		q= q+ x[i].lower()
+	else:
+		q = q+x[i]
+else:
+	print(q)
+
+	
+t_h_e___n_e_w___c_l_a_s_s
+>>> q=""
+>>> for i in range(0,len(z),1):
+	if(i==0):
+		q= q+ x[i].lower()
+	elif(i<len(z) and (x[i]>='a' or x[i]<='z')):
+		q= q+'_'
+		q= q+ x[i].lower()
+	else:
+		q = q+x[i]
+else:
+	print(q)
+
+	
+t_h_e___n_e_w___c_l_a_s_s
+>>> q=""
+>>> for i in range(0,len(z),1):
+	if(i==0):
+		q= q+ x[i].lower()
+	elif(i<len(z) and (x[i]>='A' or x[i]<='Z')):
+		q= q+'_'
+		q= q+ x[i].lower()
+	else:
+		q = q+x[i]
+else:
+	print(q)
+
+	
+t_h_e___n_e_w___c_l_a_s_s
+>>> 
+>>> q=""
+>>> for i in range(0,len(z),1):
+	if(i==0):
+		q= q+ x[i].lower()
+	elif(x[i]>='A' or x[i]<='Z'):
+		q= q+'_'
+		q= q+ x[i].lower()
+	else:
+		q = q+x[i]
+else:
+	print(q)
+
+	
+t_h_e___n_e_w___c_l_a_s_s
+>>> z
+'The_New_Class'
+>>> Z
+Traceback (most recent call last):
+  File "<pyshell#180>", line 1, in <module>
+    Z
+NameError: name 'Z' is not defined
+>>> z
+'The_New_Class'
+>>> z.lower()
+'the_new_class'
+>>> 
